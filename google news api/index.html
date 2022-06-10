@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <form class="search" action="">
+         <h1><label for="News">News</label><br></h1> 
+        <input type="text" id="fname" class="input"><br>
+        <input type="submit" class="like" value="verzenden">
+    </form>
+
+    <div class="container">
+        <ul class="news-list"></ul>
+    </div>
+    
+    <script>
+        const searchFrom = document.querySelector('.search');
+        const input = document.querySelector('.input');
+        const newsList = document.querySelector('.news-list');
+
+
+        searchFrom.addEventListener('submit', retrieve)
+
+        function retrieve(e) {
+
+            e.preventDefault()
+
+            const apiKey = '884ab57c002a4e94888140f0d4725309'
+            let topic = input.value;
+
+            let url = `http://newsapi.org/v2/everything?q=${topic}&from=2020-12-14&sortBy=publishedAt&apiKey=${apiKey}`
+
+            fetch(url).then((res)=>{
+                return res.json()
+            }).then((data)=>{
+                console.log(data)
+                data.articles.forEach(article =>{
+                    let li = document.createElement('li');
+                    let a = document.createElement('a');
+                    a.setAttribute('href', article.url );
+                    a.setAttribute('target', '_blank');
+                    a.textContent = article.title;
+                    li.appendChild(a);
+                    newsList.appendChild(li);
+                })
+            })
+        }
+    </script>
+
+</body>
+</html>

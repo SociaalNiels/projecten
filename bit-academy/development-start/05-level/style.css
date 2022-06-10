@@ -1,0 +1,52 @@
+body{
+    background-color: greenyellow;
+}
+
+h1 {
+    color: green;
+}
+
+div{
+    color: #525294;
+    background-color: lightblue;
+}
+
+h2 {
+    color: #1A1971;
+}
+
+nav {
+    display: block;
+    text-align: center;
+    background-color: lightcoral;
+  }
+
+ul {
+    color: #525294;
+}
+
+ol {
+    color: #525294;
+    font-size: 25px
+}
+
+
+span{
+    color: black;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    border: 3px solid red;
+}
+
+footer {
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+
+}

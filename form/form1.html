@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="body.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form</title>
+</head>
+<body>
+
+	<div id="navbar">
+		<ul>
+            <div class="navbar">
+                <a href="form1.html">Home</a>
+                <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Sign
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="signup.html">Signup</a>
+                  <a href="form_message.html">Form Message</a>
+                </div>
+                </div> 
+              </div>
+
+              <script>
+              
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+         
+                window.onclick = function(e) {
+                  if (!e.target.matches('.dropbtn')) {
+                  var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                      myDropdown.classList.remove('show');
+                    }
+                  }
+                }
+                </script>
+	  </ul>
+  </div>
+
+
+    
+    </body>
+</html>

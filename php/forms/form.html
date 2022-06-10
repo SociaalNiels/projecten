@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="process.php"/>
+
+    <title>Form</title>
+</head>
+<body>
+
+
+    <form action="process.php" method="post">
+        <h1 class="heading">Dierenambulance!</h1>
+
+    <label for="name">Naam</label>
+      <input type="text" placeholder="Naam" name="naam"/>
+      <label for="email">Telefoonnummer:</label>
+      <input type="text" placeholder="telefoonnummer" name="telefoonnummer"/>
+      <label for="subject">Locatie:</label>
+      <input type="text" placeholder="locatie" name="locatie"/>
+      <label for="message">Melding:</label>
+      <input type="text" placeholder="melding" name="melding"/>
+      <label for="message">Gegevens</label>
+      <input type="text" placeholder="gegevens" name="gegevens"/>
+      <div class="a">
+      <p> Spoed: </p></div>
+      <input type="checkbox" id="spoed" name="spoed" value="spoed">
+      <p><input type="submit" value="Melden"></p>
+    <input type="button" value="Terug waar je vandaan kwam!" onclick="history.back(-1)" />
+
+</form>
+</body>
+</html>

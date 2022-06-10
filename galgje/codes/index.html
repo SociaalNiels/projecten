@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hangman Game</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="spacer">Galgje</h1>
+      <p class="spacer">Type een letter om het woord te vinden voordat je dood gaat!</p>
+    </header>
+    <div class="hangman-container">
+      <svg height="200" width="280">
+
+        <line x1="110" y1="200" x2="170" y2="200" />
+        <line x1="140" y1="25" x2="140" y2="200" />
+        <line x1="140" y1="25" x2="180" y2="25" />
+        <line x1="180" y1="25" x2="180" y2="50" />
+      
+        <circle cx="180" cy="70" r="20" data-num="1" class="body-parts" />
+        
+        <line x1="180" y1="90" x2="180" y2="110" data-num="2" class="body-parts" />
+        
+        <line x1="180" y1="110" x2="160" y2="130" data-num="3" class="body-parts" />
+        
+        <line x1="180" y1="110" x2="200" y2="130" data-num="4" class="body-parts" />
+        
+        <line x1="180" y1="110" x2="180" y2="150" data-num="5" class="body-parts" />
+
+        <line x1="180" y1="150" x2="160" y2="170" data-num="6" class="body-parts" />
+
+        <line x1="180" y1="150" x2="200" y2="170" data-num="7" class="body-parts" />
+      </svg>
+    </div>
+    <div class="word-container spacer"></div>
+    <div class="wrong-letters-container"></div>
+    <div class="mobile-btns">
+      <button type="button" data-key="a">a</button>
+      <button type="button" data-key="z">z</button>
+      <button type="button" data-key="e">e</button>
+      <button type="button" data-key="r">r</button>
+      <button type="button" data-key="t">t</button>
+      <button type="button" data-key="y">y</button>
+      <button type="button" data-key="u">u</button>
+      <button type="button" data-key="i">i</button>
+      <button type="button" data-key="o">o</button>
+      <button type="button" data-key="p">p</button>
+      <button type="button" data-key="q">q</button>
+      <button type="button" data-key="s">s</button>
+      <button type="button" data-key="d">d</button>
+      <button type="button" data-key="f">f</button>
+      <button type="button" data-key="g">g</button>
+      <button type="button" data-key="h">h</button>
+      <button type="button" data-key="j">j</button>
+      <button type="button" data-key="k">k</button>
+      <button type="button" data-key="l">l</button>
+      <button type="button" data-key="m">m</button>
+      <button type="button" data-key="w">w</button>
+      <button type="button" data-key="x">x</button>
+      <button type="button" data-key="c">c</button>
+      <button type="button" data-key="v">v</button>
+      <button type="button" data-key="b">b</button>
+      <button type="button" data-key="n">n</button>
+    </div>
+  </div>
+  <div class="notification">
+    <p>dit letter heb je al gebruikt!</p>
+  </div>
+  <div class="results">
+    <p class="results-txt"></p>
+    <button type="button" class="results-btn">opnieuw spelen</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
