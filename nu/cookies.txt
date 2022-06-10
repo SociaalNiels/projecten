@@ -1,6 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-.cookielaw.org	TRUE	/	FALSE	1999999999	__cfduid	d8bdabbabdfe3174830fa0c8ab6504df11614847434
-cdn.cookielaw.org	TRUE	/	FALSE	1999999999	SameSite	Lax
-.krxd.net	TRUE	/	FALSE	1999999999	_kuid_	N-uIYhn0
-
